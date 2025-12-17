@@ -234,29 +234,13 @@ function WowMagicianTimelineUI.UpdateDisplay(nearbyEvents)
             displayText = displayText .. WowMagicianTimer.FormatTime(event.time) .. " "
 
             -- 显示名字
-            displayText = displayText .. (event.name or "") .. " "
-
-            -- 显示法术ID（如果有），转换为图标
-            if event.spellId then
-                local iconID
-                if C_Spell and C_Spell.GetSpellTexture then
-                    iconID = C_Spell.GetSpellTexture(event.spellId)
-                elseif GetSpellTexture then
-                    iconID = GetSpellTexture(event.spellId)
-                end
-
-                if iconID then
-                    displayText = displayText .. "|T" .. iconID .. ":16:16:0:0:64:64:4:60:4:60|t "
-                else
-                    displayText = displayText .. "{spell:" .. event.spellId .. "} "
-                end
-            end
+            displayText = displayText .. (event.name or "")
 
             -- 显示技能列表（伤害来源）
             if event.skills and #event.skills > 0 then
                 -- 对于"{所有人}"类型的事件，技能是使用的对策，不需要"-"
                 if event.name and event.name:match("^{所有人}") then
-                    displayText = displayText .. table.concat(event.skills, ", ")
+                    displayText = displayText .. " " .. table.concat(event.skills, ", ")
                 else
                     -- 其他事件的技能是伤害来源，需要"-"
                     displayText = displayText .. " - " .. table.concat(event.skills, ", ")
