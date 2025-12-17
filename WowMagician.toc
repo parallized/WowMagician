@@ -1,0 +1,19 @@
+## Interface: 110200
+## Title: Wow Magician
+## Notes: 团队工具包 - 显示团队玩家职业和职责信息
+## Author: Parallized
+## Version: 1.0.0
+## SavedVariables: WowMagicianDB
+
+Constants.lua
+Utils.lua
+Data.lua
+UI.lua
+Timer\Timer.lua
+Timer\TimerUI.lua
+Timer\TimelineData.lua
+Timer\Timeline.lua
+Timer\TimelineUI.lua
+Debug.lua
+Core.lua
+WowMagician.lua

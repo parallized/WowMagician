@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "调试魔兽世界插件",
+            "type": "lua",
+            "request": "launch",
+            "program": "${workspaceFolder}/WowMagician.lua",
+            "cwd": "${workspaceFolder}",
+            "luaexe": "lua5.1",
+            "encoding": "utf8"
+        }
+    ]
+}

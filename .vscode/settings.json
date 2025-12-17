@@ -1,0 +1,63 @@
+{
+    // Lua 配置 - 魔兽世界插件开发
+    "Lua.workspace.library": [
+        // 添加魔兽世界API定义文件路径（如果有的话）
+        // 例如： "C:/Program Files (x86)/World of Warcraft/_retail_/Interface/AddOns"
+    ],
+    "Lua.workspace.preloadFileSize": 1024,
+    "Lua.workspace.userThirdParty": [
+        // 可以添加第三方库路径
+    ],
+    "Lua.diagnostics.globals": [
+        // 魔兽世界API全局函数和变量
+        "CreateFrame",
+        "GetNumGroupMembers",
+        "GetRaidRosterInfo",
+        "UnitGroupRolesAssigned",
+        "IsInRaid",
+        "GetDifficultyInfo",
+        "GetRaidDifficultyID",
+        "SLASH_WOWMAGICIAN1",
+        "SLASH_WOWMAGICIAN2",
+        "SlashCmdList",
+        "strsplit",
+        "strtrim",
+        "print",
+        "tostring",
+        "tonumber",
+        "ipairs",
+        "pairs",
+        "table",
+        "string",
+        "math",
+        "type",
+        "error",
+        "assert",
+        "select",
+        "unpack",
+        // UI相关
+        "UIParent",
+        "GameFontHighlight",
+        "GameFontNormalSmall",
+        "InputBoxTemplate",
+        "UIPanelScrollFrameTemplate",
+        "UIPanelButtonTemplate",
+        // 事件相关
+        "ADDON_LOADED"
+    ],
+    "Lua.diagnostics.disable": [
+        "lowercase-global",
+        "undefined-global"
+    ],
+    "Lua.runtime.version": "Lua 5.1",
+    "Lua.completion.enable": true,
+    "Lua.hover.enable": true,
+    "Lua.signatureHelp.enable": true,
+    "Lua.workspace.ignoreDir": [
+        ".git",
+        ".vscode"
+    ],
+    "files.associations": {
+        "*.lua": "lua"
+    }
+}
