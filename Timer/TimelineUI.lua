@@ -87,6 +87,7 @@ local function CreateTimelineUI()
         eventText:SetPoint("RIGHT", eventFrame, "RIGHT", 0, 0)
         eventText:SetJustifyH("LEFT")
         eventText:SetWordWrap(false)
+        eventText:SetFont("Fonts\\FRIZQT__.TTF", 10, "OUTLINE")
         eventFrame.eventText = eventText
 
         -- 背景高亮
