@@ -1,6 +1,5 @@
 local addonName = "WowMagician"
 
--- 职业颜色映射
 WowMagicianConstants = WowMagicianConstants or {}
 
 WowMagicianConstants.classColors = {
@@ -19,14 +18,12 @@ WowMagicianConstants.classColors = {
     ["EVOKER"] = "|cff33937F",
 }
 
--- 角色名称映射（中文）
 WowMagicianConstants.roleNames = {
     ["TANK"] = "坦克",
     ["HEALER"] = "治疗",
     ["DAMAGER"] = "输出",
 }
 
--- 职业名称映射（中文）
 WowMagicianConstants.classNameMap = {
     ["WARRIOR"] = "战士",
     ["PALADIN"] = "圣骑士",
@@ -43,14 +40,12 @@ WowMagicianConstants.classNameMap = {
     ["EVOKER"] = "唤魔师",
 }
 
--- 角色到JSON格式映射
 WowMagicianConstants.roleToJson = {
     ["TANK"] = "tank",
     ["HEALER"] = "healer",
     ["DAMAGER"] = "dps",
 }
 
--- 职业到JSON格式映射
 WowMagicianConstants.classToJson = {
     ["WARRIOR"] = "warrior",
     ["PALADIN"] = "paladin",
